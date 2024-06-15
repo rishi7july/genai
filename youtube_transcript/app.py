@@ -35,7 +35,7 @@ def generate_gemini_content(transcript_text, prompt):
     response = model.generate_content(prompt + transcript_text)
     return response.text
 
-st.title("Youtube Video Summary")
+st.title("Youtube Video Summary (For Desktop Only)")
 youtube_link = st.text_input("Enter YouTube Video Link: (Hindi or English)")
 
 if youtube_link:
